@@ -66,6 +66,12 @@ def triangle_handler() -> None:
             base = float(input("Enter the base of the triangle: "))
             height = float(input("Enter the height of the triangle: "))
             triangle = Triangle(base, height)
+
+            while True:
+                print("What would you like to calculate?")
+                print("1 -> Area")
+                print("2 -> Perimeter")
+                print("0 -> Back to Main Menu")
         except ValueError:
             print("Invalid input. Please enter valid numbers for the base and height.")
 
