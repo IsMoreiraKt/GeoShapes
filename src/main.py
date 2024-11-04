@@ -2,7 +2,22 @@ import os
 
 
 
-def main():
+def circle_handler() -> None:
+    pass
+
+
+
+def square_handler() -> None:
+    pass
+
+
+
+def triangle_handler() -> None:
+    pass
+
+
+
+def main() -> None:
     exit_program = False
 
     print("----| Welcome to GeoShapes! |----")
@@ -15,6 +30,15 @@ def main():
         
             if (choice == 0):
                 exit_program == True
+            elif (choice == 1):
+                circle_handler()
+            elif (choice == 2):
+                square_handler()
+            elif (choice == 3):
+                triangle_handler()
+            else:
+                print("Only numbers between 0 and 3, please.")
+                choice = None
         except TypeError:
             print("Please enter numbers only.")
 
