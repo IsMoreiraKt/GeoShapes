@@ -7,5 +7,9 @@ class Square(Shape):
         self.side = side
 
 
-    def calculate_area(self):
+    def calculate_area(self) -> float:
         return self.side ** 2
+    
+
+    def calculate_perimeter(self) -> float:
+        return 4 * self.side
