@@ -4,7 +4,7 @@ import math
 
 
 class Circle(Shape):
-    def __init__(self, radius: int) -> None:
+    def __init__(self, radius: float) -> None:
         self.radius = radius
 
 
