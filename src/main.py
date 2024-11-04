@@ -1,9 +1,15 @@
+from shapes.circle import Circle
 import os
 
 
 
 def circle_handler() -> None:
-    pass
+    while True:
+        try:
+            radius = float(input("Enter the radius of the circle: "))
+            circle = Circle(radius)
+        except ValueError:
+            print("Invalid input. Please enter a valid number for the radius.")
 
 
 
