@@ -10,3 +10,7 @@ class Circle(Shape):
 
     def calculate_area(self) -> float:
         return math.pi * (self.radius ** 2)
+    
+
+    def calculate_perimeter(self) -> float:
+        return 2 * math.pi * self.radius
