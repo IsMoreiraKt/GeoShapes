@@ -1,4 +1,5 @@
 from shapes.circle import Circle
+from shapes.square import Square
 import os
 
 
@@ -32,7 +33,12 @@ def circle_handler() -> None:
 
 
 def square_handler() -> None:
-    pass
+    while True:
+        try:
+            side_length = float(input("Enter the length of the square's side: "))
+            square = Square(side_length)
+        except ValueError:
+            print("Invalid input. Please enter a valid number for the side length.")
 
 
 
