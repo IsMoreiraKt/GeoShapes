@@ -1,5 +1,6 @@
 from shapes.circle import Circle
 from shapes.square import Square
+from shapes.triangle import Triangle
 import os
 
 
@@ -42,7 +43,7 @@ def square_handler() -> None:
                 print("What would you like to calculate?")
                 print("1 -> Area")
                 print("2 -> Perimeter")
-                print("3 -> Back to Main Menu")
+                print("0 -> Back to Main Menu")
 
                 choice = int(input("Enter your choice: "))
 
@@ -60,7 +61,13 @@ def square_handler() -> None:
 
 
 def triangle_handler() -> None:
-    pass
+    while True:
+        try:
+            base = float(input("Enter the base of the triangle: "))
+            height = float(input("Enter the height of the triangle: "))
+            triangle = Triangle(base, height)
+        except ValueError:
+            print("Invalid input. Please enter valid numbers for the base and height.")
 
 
 
