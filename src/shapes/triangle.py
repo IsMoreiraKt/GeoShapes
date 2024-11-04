@@ -15,3 +15,7 @@ class Triangle(Shape):
     
     def calculate_area(self) -> float:
         return (self.base * self.height) / 2
+
+
+    def calculate_perimeter(self) -> float:
+        return self.base + self.side1 + self.side2
