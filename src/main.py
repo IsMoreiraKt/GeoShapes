@@ -8,6 +8,12 @@ def circle_handler() -> None:
         try:
             radius = float(input("Enter the radius of the circle: "))
             circle = Circle(radius)
+
+            while True:
+                print("What would you like to calculate?")
+                print("1 -> Area")
+                print("2 -> Perimeter")
+                print("3 -> Back to Main Menu")
         except ValueError:
             print("Invalid input. Please enter a valid number for the radius.")
 
