@@ -11,3 +11,7 @@ class Triangle(Shape):
         self.height = height
         self.first_side = first_side
         self.second_side = second_side
+
+    
+    def calculate_area(self) -> float:
+        return (self.base * self.height) / 2
