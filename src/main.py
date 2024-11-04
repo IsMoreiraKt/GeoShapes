@@ -13,7 +13,19 @@ def circle_handler() -> None:
                 print("What would you like to calculate?")
                 print("1 -> Area")
                 print("2 -> Perimeter")
-                print("3 -> Back to Main Menu")
+                print("0 -> Back to Main Menu")
+
+                choice = int(input("Enter your choice: "))
+
+                if (choice == 0):
+                    return
+                elif (choice == 1):
+                    print(f"Area of the circle: {circle.calculate_area()}")
+                elif (choice == 2):
+                    print(f"Perimeter of the circle: {circle.calculate_perimeter()}")
+                else:
+                    print("Please choose a valid option (1, 2, or 3).")
+                    choice = None
         except ValueError:
             print("Invalid input. Please enter a valid number for the radius.")
 
