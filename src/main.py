@@ -37,6 +37,12 @@ def square_handler() -> None:
         try:
             side_length = float(input("Enter the length of the square's side: "))
             square = Square(side_length)
+
+            while True:
+                print("What would you like to calculate?")
+                print("1 -> Area")
+                print("2 -> Perimeter")
+                print("3 -> Back to Main Menu")
         except ValueError:
             print("Invalid input. Please enter a valid number for the side length.")
 
