@@ -44,24 +44,29 @@ def get_shape_input(shape_type: str):
 
 def main() -> None:
     print("----| Welcome to GeoShapes! |----")
+    
     while True:
         print("Choose a shape to work with:")
         print("0 -> Exit\n1 -> Circle\n2 -> Square\n3 -> Triangle")
         try:
             choice = int(input("Enter your choice: "))
+    
             if choice == 0:
                 print("Exiting program. Goodbye!")
                 break
             elif choice == 1:
                 shape_instance = get_shape_input('circle')
+    
                 if shape_instance:
                     shape_handler('circle', shape_instance)
             elif choice == 2:
                 shape_instance = get_shape_input('square')
+    
                 if shape_instance:
                     shape_handler('square', shape_instance)
             elif choice == 3:
                 shape_instance = get_shape_input('triangle')
+    
                 if shape_instance:
                     shape_handler('triangle', shape_instance)
             else:
